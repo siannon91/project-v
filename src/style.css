@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/sfondo.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #fbb400;
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.app-container {
+  background-color: white;
+  border: 3px #ffb703 double;
+}
+
+img {
+  width: 130px;
+  height: auto;
+}
