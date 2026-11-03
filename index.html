@@ -2,13 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>project-v</title>
-    <script type="module" crossorigin src="/assets/index-CAoPt-vL.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-CsUDhMuy.css">
+    <title>Fortune Cookie Quotes</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="/icon.png">
+    <script type="module" crossorigin src="/assets/index-DvgVf8EK.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BEYc8zRA.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="app-container">
+      <h1>Inspirational Fortune Cookie Quotes</h1>
+
+      <div class="cookie-area">
+        <div id="cookie-display" class="cookie-closed">
+          <img src="/chiuso.png" alt="fortune cookie">
+        </div>
+
+        <div id="quote-paper" class="paper hidden">
+          <p id="quote-text"></p>
+        </div>
+      </div>
+
+      <button id="action-btn">Open Cookie</button>
+    </div>
+    
   </body>
 </html>
