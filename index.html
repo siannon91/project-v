@@ -2,12 +2,27 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>project-v</title>
+    <link rel="stylesheet" href="/src/style.css">
   </head>
   <body>
-    <div id="app"></div>
+    <div class="app-container">
+      <h1>Fortune Cookie Quotes</h1>
+
+      <div class="cookie-area">
+        <div id="cookie-display" class="cookie-closed">
+          <img src="./public/chiuso.png" alt="fortune cookie">
+        </div>
+
+        <div id="quote-paper" class="paper hidden">
+          <p id="quote-text"></p>
+        </div>
+      </div>
+
+      <button id="action-btn">Open Cookie</button>
+    </div>
+    
     <script type="module" src="/src/main.js"></script>
   </body>
 </html>
