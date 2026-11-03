@@ -22,9 +22,89 @@ h1 {
 .app-container {
   background-color: white;
   border: 3px #ffb703 double;
+  text-align: center;
+  max-width: 480px;
+  min-height: 550px;
+  width: 90%;
+  box-shadow: 0 5px 15px rgba(189, 133, 11, 0.655);
+  padding: 40px 30px;
 }
 
 img {
   width: 130px;
   height: auto;
+}
+
+.cookie-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+#cookie-display {
+  transition: transform 0.3s ease;
+}
+
+#cookie-display:hover {
+  transform: scale(1.2) rotate(5deg);
+}
+
+#quote-text {
+  color: #444;
+  font-size: 1.1rem;
+  font-style: italic;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#action-btn {
+  background-color: #ffb703;
+  color: white;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 15px rgba(255, 183, 3, 0.3);
+  margin-top: 15px;
+}
+
+#action-btn:hover {
+  background-color: #fb8500;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(251, 133, 0, 0.4);
+}
+
+#action-btn:active {
+  transform: translateY(0);
+}
+
+.paper {
+  background: #f4ecd8;
+  border: 2px solid #333;
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  animation: revealPaper 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+@keyframes revealPaper {
+  from {
+    opacity: 0;
+    transform: translateY(-100px) scale(0.1);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }
