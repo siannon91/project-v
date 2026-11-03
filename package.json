@@ -2,13 +2,17 @@
   "name": "project-v",
   "version": "0.0.0",
   "private": true,
+  "homepage": "https://siannon91.github.io/project-v/",
   "type": "module",
   "scripts": {
+    "predeploy" : "npm run build" , 
+    "deploy" : "gh-pages -d dist" ,
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
+    "gh-pages": "^6.3.0",
     "vite": "^8.3.5"
   }
 }
